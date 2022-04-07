@@ -16,9 +16,10 @@
     <h1>{{ title }}</h1>
     <div>
       <ul style="list-style-type: none">
-        <li v-for="names in names">{{ names }}</li>
+        <li v-for="names in names">{{ names }} {{ emoji }}</li>
       </ul>
     </div>
+    <button v-on:click="changeTitle">Trocar nome</button>
   </main>
 </body>
 </html>

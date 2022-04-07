@@ -8,5 +8,23 @@ const app = new Vue({
       'Gustavo Carvalho',
       'Vinicius Morselli'
     ]
+  },
+  computed: {
+    emoji: function() {
+      if(this.names[0] == 'Daniel Walter') {
+        return '☕'
+      } else {
+        return ''
+      }
+    }
+  },
+  methods: {
+    changeTitle: function() {
+      if(this.title == "THE HACKATHON") {
+        this.title = "BY UNDEFINED"
+      } else {
+        this.title = "THE HACKATHON"
+      }
+    }
   }
 })
